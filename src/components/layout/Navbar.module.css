@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'nome';
+    src: url('../../font/Cinzel-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(
+    #2c6a99 10%,
+    #0a4b75 50%
+    );
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 a {
+    font-family: 'nome';
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 100px;
+    width: 50%;
+}
+
+.container ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 50%;
+}
+
+.container ul a {
+    text-decoration: none;
+    margin: 1em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 41px 0px;
+    position: relative;
+}
+
+.container ul a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.container ul a:hover:after {
+    width: 100%;
+    left: 0;
+}

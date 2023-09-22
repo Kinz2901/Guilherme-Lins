@@ -1,0 +1,15 @@
+.div {
+    background-image: linear-gradient(
+    #2c6a99 10%,
+    #0a4b75 50%
+    );
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div p {
+    color: white;
+}
